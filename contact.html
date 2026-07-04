@@ -10,15 +10,148 @@
 </head>
 
 <body>
+    <nav class="navigation">
+        <div>
+            <img src="Images/AFRI.png" alt="" width="100px" height="50px">
+        </div>
+        <div>
+            <ul type="none" class="lien">
+                <li><a href="index.html">Acceuil</a></li>
+                <li><a href="programme.html">Programme</a></li>
+                <li><a href="intervenants.html">Intervenant</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><i class="fa-regular fa-sun"></i></li>
 
-    <nav>
-        <ul>
-            <li><a href="index.html">Accueil</a></li>
-            <li><a href="programme.html">Programme</a></li>
-            <li><a href="intervenants.html">Intervenant</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
+            </ul>
+        </div>
     </nav>
+    <section class="hero-interne">
+    <div class="hero-content">
+        <h1>Contact et Inscription</h1>
+    </div>
+</section>
+
+<section class="contact-container">
+    <div class="formulaire">
+        <h2>Inscription</h2>
+        <form id="form">
+            <div>
+                <label>Nom complet</label>
+                <input type="text" id="nom" required>
+                <small class="error"></small>
+            </div>
+
+            <div>
+                <label>Email</label>
+                <input type="email" id="email" required>
+                <small class="error"></small>
+            </div>
+
+            <div>
+                <label>Téléphone</label>
+                <input type="text" id="telephone" required>
+                <small ></small>
+            </div>
+            <div >
+                <label>Type de participation</label>
+                <select id="type" required>
+                    <option value="">Choisir</option>
+                    <option>Participant</option>
+                    <option>Intervenant</option>
+                    <option>Sponsor</option>
+                </select>
+                <small class="error"></small>
+            </div>
+            <div>
+                <label>Pays</label>
+                <select id="pays" required>
+                    <option value="">Choisir</option>
+                    <option>Sénégal</option>
+                    <option>Ghana</option>
+                    <option>Nigeria</option>
+                    <option>Maroc</option>
+                    <option>Côte d'Ivoire</option>
+                    <option>Mali</option>
+                    <option>Kenya</option>
+                    <option>Afrique du Sud</option>
+                    <option>Tunisie</option>
+                    <option>Cameroun</option>
+                </select>
+                <small class="error"></small>
+            </div>
+            <div>
+                <label>Message</label>
+                <textarea id="message"></textarea>
+                <small class="error"></small>
+            </div>
+            <button type="submit">Envoyer</button>
+            <p id="successMessage"></p>
+
+        </form>
+    </div>
+
+    <div class="infos">
+        <h2>Informations</h2>
+        <p><i class="fa-solid fa-location-dot"></i> Dakar, Sénégal</p>
+        <p><i class="fa-solid fa-envelope"></i> contact@africonnect.com</p>
+        <p><i class="fa-solid fa-phone"></i> +221 77 000 00 00</p>
+    </div>
+
+</section>
+
+<section class="faq">
+    <h2 style="text-align:center;">FAQ</h2>
+
+    <div class="accordion">
+
+        <div class="item">
+            <input type="checkbox" id="q1">
+            <label for="q1">Comment s'inscrire ?</label>
+            <div class="content">
+                <p>Remplissez le formulaire et soumettez votre demande.</p>
+            </div>
+        </div>
+
+        <div class="item">
+            <input type="checkbox" id="q2">
+            <label for="q2">L'événement est-il payant ?</label>
+            <div class="content">
+                <p>Certaines catégories nécessitent un billet payant.</p>
+            </div>
+        </div>
+
+        <div class="item">
+            <input type="checkbox" id="q3">
+            <label for="q3">Puis-je devenir intervenant ?</label>
+            <div class="content">
+                <p>Oui, sélectionnez "Intervenant" dans le formulaire.</p>
+            </div>
+        </div>
+
+        <div class="item">
+            <input type="checkbox" id="q4">
+            <label for="q4">Où se déroule l'événement ?</label>
+            <div class="content">
+                <p>L'événement se déroule à Dakar.</p>
+            </div>
+        </div>
+
+        <div class="item">
+            <input type="checkbox" id="q5">
+            <label for="q5">Comment contacter l'équipe ?</label>
+            <div class="content">
+                <p>Via email ou téléphone indiqué dans la section contact.</p>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<section class="map">
+    <h2 style="text-align:center;">Localisation</h2>
+
+    <iframe src="https://www.google.com/maps?q=Dakar&output=embed" width="100%" height="400" style="border:0;"></iframe>
+</section>
     <script src="Js/main.js"></script>
 </body>
 
