@@ -20,47 +20,43 @@
                 <li><a href="programme.html">Programme</a></li>
                 <li><a href="intervenants.html">Intervenant</a></li>
                 <li><a href="contact.html">Contact</a></li>
-                <li><i class="fa-regular fa-sun"></i></li>
+                 <li>
+                    <button>
+                        <i class="fa-regular fa-sun"></i>
+                    </button>
+                </li>
 
             </ul>
         </div>
     </nav>
-    <section class="hero-interne">
-    <div class="hero-content">
-        <h1>Contact et Inscription</h1>
-    </div>
-</section>
-
+ 
 <section class="contact-container">
-    <div class="formulaire">
+    <div class="colonnegauche">
+        <div class="formulaire">
         <h2>Inscription</h2>
         <form id="form">
             <div>
                 <label>Nom complet</label>
                 <input type="text" id="nom" required>
-                <small class="error"></small>
             </div>
 
             <div>
                 <label>Email</label>
-                <input type="email" id="email" required>
-                <small class="error"></small>
+                <input type="email" id="email">
             </div>
 
             <div>
                 <label>Téléphone</label>
-                <input type="text" id="telephone" required>
-                <small ></small>
+                <input type="text" id="telephone">
             </div>
             <div >
                 <label>Type de participation</label>
-                <select id="type" required>
+                <select id="type">
                     <option value="">Choisir</option>
                     <option>Participant</option>
                     <option>Intervenant</option>
                     <option>Sponsor</option>
                 </select>
-                <small class="error"></small>
             </div>
             <div>
                 <label>Pays</label>
@@ -89,14 +85,19 @@
 
         </form>
     </div>
-
-    <div class="infos">
+    </div>
+    <div class="colonnedroite">
+        <div class="infos">
         <h2>Informations</h2>
         <p><i class="fa-solid fa-location-dot"></i> Dakar, Sénégal</p>
         <p><i class="fa-solid fa-envelope"></i> contact@africonnect.com</p>
         <p><i class="fa-solid fa-phone"></i> +221 77 000 00 00</p>
     </div>
+    <div class="map">
+        <iframe src="https://www.google.com/maps?q=Dakar&output=embed"></iframe>
+    </div>
 
+    </div>
 </section>
 
 <section class="faq">
@@ -147,11 +148,6 @@
     </div>
 </section>
 
-<section class="map">
-    <h2 style="text-align:center;">Localisation</h2>
-
-    <iframe src="https://www.google.com/maps?q=Dakar&output=embed" width="100%" height="400" style="border:0;"></iframe>
-</section>
     <script src="Js/main.js"></script>
 </body>
 
