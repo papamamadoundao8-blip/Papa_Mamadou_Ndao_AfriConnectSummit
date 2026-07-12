@@ -9,10 +9,10 @@
     <link rel="stylesheet" href="Css/style.css">
 </head>
 
-<body>
+<body class="back">
     <nav class="navigation">
         <div>
-            <img src="Images/AFRI.png" alt="" width="100px" height="50px">
+            <img src="Images/LOGO1.png" alt="Logo AfriConnect" class="logo">
         </div>
         <div>
             <ul type="none" class="lien">
@@ -36,15 +36,18 @@
         <h2>Inscription</h2>
         <form id="form">
             <div>
-                <label>Nom complet</label>
-                <input type="text" id="nom" required>
+                <label>Prenom</label>
+                <input type="text" id="prenom">
+            </div>
+            <div>
+                <label>Nom</label>
+                <input type="text" id="nom">
             </div>
 
             <div>
                 <label>Email</label>
                 <input type="email" id="email">
             </div>
-
             <div>
                 <label>Téléphone</label>
                 <input type="text" id="telephone">
@@ -78,10 +81,8 @@
             <div>
                 <label>Message</label>
                 <textarea id="message"></textarea>
-                <small class="error"></small>
             </div>
             <button type="submit">Envoyer</button>
-            <p id="successMessage"></p>
 
         </form>
     </div>
@@ -147,6 +148,54 @@
 
     </div>
 </section>
+<footer>
+    <div class="footer">
+        <div>
+            <h3>AfriConnectSummit</h3>
+            <p>Connecter les talents africains au monde. Le rendez-vous panafricain des développeurs, entrepreneurs et investisseurs.</p>
+        </div>
+
+        <div>
+            <h3>Liens rapides</h3>
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="programme.html">Programme</a></li>
+                <li><a href="intervenants.html">Intervenants</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+
+        <div>
+            <h3>Contact</h3>
+            <ul>
+                <li><a href="#"><i class="fa-solid fa-envelope"></i> contact@africonnect.com</a></li>
+                <li><a href="#"><i class="fa-solid fa-phone"></i> +221 77 000 00 00</a></li>
+                <li><a href="#"><i class="fa-solid fa-location-dot"></i> Dakar, Sénégal</a></li>
+            </ul>
+        </div>
+        <div>
+            <h3>Suivez-nous</h3>
+            <div class="reseauxsociaux">
+                <i class="fa-brands fa-facebook-f"></i>
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-linkedin-in"></i>
+                <i class="fa-brands fa-instagram"></i>
+            </div>
+        </div>
+        <div>
+            <h3>Liens rapides</h3>
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="programme.html">Programme</a></li>
+                <li><a href="intervenants.html">Intervenants</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="footer_bas">
+        <p>2026 AfriConnect Summit</p>
+    </div>
+</footer>
 
     <script src="Js/main.js"></script>
 </body>
