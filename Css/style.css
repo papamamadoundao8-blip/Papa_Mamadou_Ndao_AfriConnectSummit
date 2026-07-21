@@ -4,15 +4,16 @@
 }
 
 .navigation {
+    position: fixed;
+    width: 100%;
     display: flex;
     justify-content: space-between;
     margin-right: 20px;
 }
-
 .lien {
     display: flex;
     justify-content: space-between;
-    margin-top: 20px;
+    margin-top: 15px;
     gap: 20px;
 }
 
@@ -134,9 +135,6 @@ a {
     margin-bottom: 200px;
 }
 
-/* body{
-background: #fddcb2;
-} */
 .bouttonP {
     text-align: center;
     margin-top: 20px;
@@ -495,7 +493,7 @@ td {
     flex: 2;
     min-width: 200px;
     max-width: 600px;
-    border: 2px solid black;
+    border: 2px solid white;
     border-radius: 20px;
     margin-bottom: 100px;
     padding: 30px;
@@ -1279,7 +1277,7 @@ footer {
 }
 
 .PRO {
-    background: linear-gradient(135deg, #2f7bff2a, #fbfbfc48), url(../Images/back19.png);
+    background: linear-gradient(135deg,#fbfbfc31, #2f4eff1f), url(../Images/back19.png);
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
@@ -1304,7 +1302,7 @@ footer {
 }
 
 #photoProgramme {
-    width: 600px;
+    width: 590px;
     height: 650px;
 }
 
@@ -1355,7 +1353,6 @@ footer {
 
 }
 
-/* Onglets */
 .boutonCALEN {
     justify-content: flex-start;
     gap: 12px;
@@ -1474,14 +1471,16 @@ footer {
 }
 
 .faq {
-    max-width: 640px;
+    max-width: 800px;
     margin: 0 auto 200px;
 }
 
 .faq h2 {
+    font-size: 30px;
+    margin-top: 90px;
     margin-bottom: 24px;
-    font-size: 1.8rem;
-    letter-spacing: 0.5px;
+    text-shadow: 0 0 10px #00bfff, 0 0 20px #00bfff, 0 0 30px #00bfff;
+    color: white;
 }
 
 .accordion {
@@ -1494,16 +1493,14 @@ footer {
     background: #12192c;
     border: 1px solid #e2e4ea;
     border-radius: 10px;
-    overflow: hidden;
     box-shadow: 0 1px 2px rgba(0, 0, 0, 0.03);
-    transition: box-shadow .25s ease;
+    transition: 0.25s;
 }
  .item > label {
     color: white;
  }
 
 .item input[type="checkbox"] {
-    position: absolute;
     opacity: 0;
 }
 
@@ -1525,10 +1522,8 @@ footer {
 
 .item .content p {
     overflow: hidden;
-    min-height: 0;
-    margin: 0 0 16px 0;
+    margin:5px;
     color: #4b4f5a;
-    line-height: 1.5;
 }
 
 @keyframes ttt {
@@ -1576,10 +1571,6 @@ footer {
     top: 20px;
     right: 20px;
     z-index: 1001;
-}
-.navigation{
-    position:relative;
-    width: 100%;
 }
 .mesbouttons button{
     background: blue;
@@ -1946,11 +1937,8 @@ footer {
     .colonnegauche{
         width: 100%;
     }
-
-.colonnegauche,
 .formulaire {
     width: 100%;
-    flex: 1 1 100%;
 }
 
 .contact-container {
@@ -1993,3 +1981,308 @@ footer {
     background: linear-gradient(135deg, #7f8cff96 0%, #6FA8FF 35%, #89C2FF 70%, #B8D8FF 100%);
 }
 
+
+.themeclair body {
+    background: #ffffff;
+    color: #12162B;
+}
+.themeclair .mapage {
+    background: white;
+}
+.themeclair .PRO {
+    background: white;
+}
+
+.themeclair .back,.themeclair .bac{
+    background: #ffffff;
+    color: #12162B;
+}
+.themeclair .titrePro,.themeclair .titreP{
+    color: #12162B;
+}
+
+.themeclair .chiffreclé {
+    background-color: #ffffff;
+}
+.themeclair .FAQ {
+    color: #12162B;
+    text-shadow: none;
+}
+.themeclair .centrerC{
+    color: #12162B;
+    text-shadow: none;
+}
+.themeclair .centrerP{
+    color: #12162B;
+    text-shadow: none;
+}
+.themeclair .centrerV{
+    color: #12162B;
+    text-shadow: none;
+}
+.themeclair .centrerS{
+    color: #12162B;
+    text-shadow: none;
+}
+.themeclair .centrerT{
+    color: #12162B;
+    text-shadow: none;
+}
+.themeclair .centrerN{
+    color: #12162B;
+    text-shadow: none;
+}
+.themeclair .chiffre1 {
+    background: #ffffff;
+    border: 1px solid #dfe3ec;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.274);
+}
+.themeclair .chiffre2 {
+    background: #ffffff;
+    border: 1px solid #dfe3ec;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.308);
+}
+.themeclair .chiffre3 {
+    background: #ffffff;
+    border: 1px solid #dfe3ec;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.267);
+}
+.themeclair .chiffre4 {
+    background: #ffffff;
+    border: 1px solid #dfe3ec;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.336);
+}
+.themeclair .mesp {
+    color: #12162B;
+    text-shadow: none;
+}
+.themeclair .chiffre1 .nombre{
+    color: #12162B;
+    text-shadow: none;
+}
+.themeclair .chiffre2 .nombre{
+    color: #12162B;
+    text-shadow: none;
+}
+.themeclair .chiffre3 .nombre{
+    color: #12162B;
+    text-shadow: none;
+}
+.themeclair .chiffre4 .nombre{
+    color: #12162B;
+    text-shadow: none;
+}
+
+.themeclair .PARTICIPER {
+    background-color: #f5f7fa;
+}
+.themeclair .sousTitreP {
+    color: #5a6472;
+    text-shadow: none;
+}
+.themeclair .carteP {
+    background: #ffffff;
+    border: 1px solid #dfe3ec;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.267);
+}
+.themeclair .CARTE1 p {
+    color: #12162B;
+    text-shadow: none;
+}
+.themeclair .PART {
+    color: #12162B;
+    text-shadow: none;
+}
+
+.themeclair .Nos {
+    background: #ffffff;
+}
+.themeclair .carte_intervenant {
+    background-color: #ffffff;
+    border: 1px solid #dfe3ec;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.267);
+}
+.themeclair .carte_intervenant h3 {
+    color: #12162B;
+}
+.themeclair .parcours {
+    border-top: 1px solid #dfe3ec;
+}
+.themeclair .posteO {
+    border-top: 1px solid #dfe3ec;
+}
+.themeclair .posteO li {
+    color: #4b4f5a;
+}
+.themeclair .parcours li{
+    color: #4b4f5a;
+}
+
+.themeclair .sponsors {
+    background: #f5f7fa;
+}
+.themeclair .titreS {
+    color: #12162B;
+}
+.themeclair .carte_sponsor {
+    background: #ffffff;
+    border: 1px solid #dfe3ec;
+}
+.themeclair .carte_sponsor h3 {
+    color: #12162B;
+}
+
+.themeclair .thematique {
+    background: #ffffff;
+}
+.themeclair .carteTheme {
+    background: #ffffff;
+    border: 1px solid #dfe3ec;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+.themeclair .contenu h3 {
+    color: #12162B;
+}
+.themeclair .contenu p {
+    color: #4b4f5a;
+}
+.themeclair .jour1 table{
+    background: #ffffff;
+    border: 1px solid #dfe3ec;
+}
+.themeclair .jour2 table{
+    background: #ffffff;
+    border: 1px solid #dfe3ec;
+}
+.themeclair .jour3 table{
+    background: #ffffff;
+    border: 1px solid #dfe3ec;
+}
+.themeclair .tableP .jour1 table {
+    background: #ffffff;
+    border: 1px solid #dfe3ec;
+}
+.themeclair .tableP .jour2 table {
+    background: #ffffff;
+    border: 1px solid #dfe3ec;
+}
+.themeclair .tableP .jour3 table {
+    background: #ffffff;
+    border: 1px solid #dfe3ec;
+}
+
+.themeclair .tableP td {
+    color: #12162B;
+}
+.themeclair .jour1 td{
+    color: #12162B;
+}
+.themeclair .jour2 td{
+    color: #12162B;
+}
+.themeclair .jour3 td{
+    color: #12162B;
+}
+.themeclair .jour1 th {
+    background: #eef4fb;
+    color: #1e63d0;
+}
+.themeclair .jour2 th {
+    background: #eef4fb;
+    color: #1e63d0;
+}
+.themeclair .jour3 th {
+    background: #eef4fb;
+    color: #1e63d0;
+}
+.themeclair .formulaire {
+    border: 1px solid #dfe3ec;
+}
+.themeclair .formulaire label {
+    color: #12162B;
+}
+.themeclair .formulaire h2{
+    color: #12162B;
+}
+.themeclair .infos {
+    background-color: #f5f7fa;
+}
+.themeclair .infos p {
+    color: #12162B;
+}
+.themeclair .infos h2{
+    color: #12162B;
+}
+.themeclair a{
+    color: black;
+
+}
+.themeclair .item {
+    background: #ffffff;
+    border: 1px solid #dfe3ec;
+}
+.themeclair .item label {
+    color: #12162B;
+}
+.themeclair .item .content p {
+    color: #4b4f5a;
+}
+
+.themeclair footer {
+    background-color: #ffffff;
+    border-top: 1px solid #dfe3ec;
+}
+.themeclair .footer h3 {
+    color: #12162B;
+}
+.themeclair .footer ul li a {
+    color: #4b4f5a;
+}
+.themeclair .footer p{
+    color: #4b4f5a;
+}
+.themeclair .footer_bas p {
+    color: #6c7a89;
+}
+.themeclair .reseauxsociaux i {
+    background: #f0f2f6;
+    border: 1px solid #dfe3ec;
+    color: #12162B;
+}
+body.themeclair.back{
+    background: white;
+}
+body.themeclair.INTER{
+    background: white;
+}
+
+.themeclair .lien button {
+    background: #12162B;
+    color: white;
+}
+.themeclair .formulaire {
+    border: 2px solid black;
+}
+.themeclair .buttonprogramme{
+    color: #0b0bcf;
+    border: 2px solid blue;
+}
+.themeclair .carte_sponsor {
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.267);
+}
+.navbarauscroll {
+    background:rgba(89, 89, 250, 0.425);
+    backdrop-filter: blur(12px);
+}
+.inter{
+    padding-top: 90px;
+}
+.PROGRA{
+    padding-top: 60px;
+}
+.contact-container{
+    padding-top: 120px;
+}
+.PAGEACCEUIL{
+    padding-top: 55px;
+}
