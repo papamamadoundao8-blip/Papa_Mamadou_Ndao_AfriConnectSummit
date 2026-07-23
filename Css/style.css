@@ -8,6 +8,7 @@
     width: 100%;
     display: flex;
     justify-content: space-between;
+    z-index: 1000;
     margin-right: 20px;
 }
 .lien {
@@ -355,6 +356,7 @@ td {
 
 .thematique {
     max-width: 1200px;
+    background-color: #080f18;
     padding: 100px;
     margin: 0 auto;
     height: auto;
@@ -374,15 +376,7 @@ td {
     justify-content: center;
 }
 
-.theme>div {
-    background: #fff;
-    border: 1px solid rgba(23, 26, 46, 0.08);
-    border-radius: 14px;
-    padding: 1.8rem;
-    text-align: center;
-    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.05);
-    flex: 0 1 calc(33.333% - 20px);
-}
+
 
 .theme i {
     font-size: 20px;
@@ -739,7 +733,7 @@ td {
     text-shadow: 0 0 10px #00bfff, 0 0 20px #00bfff, 0 0 30px #00bfff;
     font-size: 45px;
     margin-bottom: 120px;
-    margin-top: 200px;
+    margin-top: 150px;
 }
 
 .chiffre1 .nombre {
@@ -1414,7 +1408,6 @@ footer {
     background: #12192cef;
     border: 1px solid #2a3352;
     border-radius: 16px;
-    width: 240px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.25);
 }
 
@@ -1422,7 +1415,7 @@ footer {
     background: #12192c;
     border: 1px solid #2a3352;
     border-radius: 16px;
-    width: 240px;
+    width: 400px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.25);
     transition: transform 0.25s ease, border-color 0.25s ease;
     overflow: hidden;
@@ -1436,17 +1429,14 @@ footer {
 .imgTheme {
     width: 100%;
     height: 200px;
-    margin: 0;
-    padding: 0;
 }
 
 .imgTheme img {
     width: 100%;
     height: 100%;
-    border-radius: 30px;
-    object-fit: cover;
     display: block;
-    margin: 0;
+    object-fit: cover;
+ 
 }
 
 .contenu {
@@ -1465,11 +1455,6 @@ footer {
     font-size: 14px;
     line-height: 1.6;
 }
-
-.thematique {
-    background: #12192c;
-}
-
 .faq {
     max-width: 800px;
     margin: 0 auto 200px;
@@ -2274,6 +2259,15 @@ body.themeclair.INTER{
     background:rgba(89, 89, 250, 0.425);
     backdrop-filter: blur(12px);
 }
+.navbarauscroll .logo {
+    background: white;
+    border-radius: 70px;
+    padding: 5px 15px;
+    margin: 10px;
+}
+.navbarauscroll .lien {
+    padding: 10px;
+}
 .inter{
     padding-top: 90px;
 }
@@ -2285,4 +2279,28 @@ body.themeclair.INTER{
 }
 .PAGEACCEUIL{
     padding-top: 55px;
+}
+#retourverslehaut {
+    position: fixed;
+    bottom: 30px;
+    padding: 15px 20px;
+    cursor: pointer;
+    right: 30px;
+    background: blue;
+    color: white;
+    border: blue;
+    border-radius: 50%;
+    font-size: 17px;
+    z-index: 1000;
+    display: none;
+}
+.fondu {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: 0.7s;
+}
+
+.fondre {
+    opacity: 1;
+    transform: translateY(0);
 }
