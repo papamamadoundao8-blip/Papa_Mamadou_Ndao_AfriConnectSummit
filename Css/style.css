@@ -485,8 +485,7 @@ td {
 
 .formulaire {
     flex: 2;
-    min-width: 200px;
-    max-width: 600px;
+    max-width: 750px;
     border: 2px solid white;
     border-radius: 20px;
     margin-bottom: 100px;
@@ -535,8 +534,7 @@ td {
 }
 
 .formulaire textarea {
-    min-height: 100px;
-    resize: vertical;
+    min-height: 90px;
 }
 #envoyer {
     padding: 14px 25px;
@@ -583,29 +581,21 @@ td {
 }
 
 .colonnegauche {
-    flex: 2;
+
     min-width: 100px;
 }
 
 .colonnedroite {
-    flex: 1;
-    min-width: 250px;
+    width: 450px;
     display: flex;
     flex-direction: column;
     gap: 20px;
 }
 
-.map {
-    width: 100%;
-    aspect-ratio: 1 / 1;
-    border-radius: 10px;
-    overflow: hidden;
-}
-
 .map iframe {
     width: 100%;
-    height: 100%;
-    border: 0;
+    height: 325px;
+    border-radius: 40px;
     display: block;
 }
 
@@ -1453,7 +1443,6 @@ footer {
 .contenu p {
     color: #b7c3ce;
     font-size: 14px;
-    line-height: 1.6;
 }
 .faq {
     max-width: 800px;
@@ -1463,7 +1452,7 @@ footer {
 .faq h2 {
     font-size: 30px;
     margin-top: 90px;
-    margin-bottom: 24px;
+    margin-bottom: 50px;
     text-shadow: 0 0 10px #00bfff, 0 0 20px #00bfff, 0 0 30px #00bfff;
     color: white;
 }
@@ -1561,8 +1550,9 @@ footer {
     background: blue;
     color: white;
     font-weight: bold;
+    font-size: 17px;
     border-radius: 50px;
-    padding: 15px 15px;
+    padding: 13px 13px;
     border: 2px solid blue;
 }
 
@@ -1661,6 +1651,10 @@ footer {
         min-height: 340px;
         font-size: 11px;
     }
+    .centrerN{
+    color: blue;
+    font-size: 15px;
+}
 
     .titreP{
         margin-left: 30px;
@@ -1923,12 +1917,19 @@ footer {
         width: 100%;
     }
 .formulaire {
+    width: 90%;
+}
+.accordion{
+    width: 80%;
+    margin-left: 100px;
+}
+
+.colonnedroite {
+    display: flex;
+    flex-direction: row;
     width: 100%;
 }
 
-.contact-container {
-    flex-direction: column;
-}
 }
 @media (min-width: 1000px) and (max-width: 1300px){
     #photoAcceuil{
@@ -1956,9 +1957,9 @@ footer {
 }
 .centrerN{
     color: white;
-    text-shadow: 0 0 10px #00bfff, 0 0 20px #00bfff, 0 0 30px #00bfff;
     font-size: 40px;
     text-align: center;
+    font-weight: bold;
     margin-top: 100px;
 
 }
@@ -2303,4 +2304,21 @@ body.themeclair.INTER{
 .fondre {
     opacity: 1;
     transform: translateY(0);
+}
+.carte_intervenant:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.18);
+}
+.AFR{
+    color: blue;
+    font-size: 45px;
+}
+#annee{
+    font-size: 15px;
+}
+.lien {
+  list-style: none;
+}
+.cache{
+    display: none;
 }
