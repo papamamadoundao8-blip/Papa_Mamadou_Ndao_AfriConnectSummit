@@ -14,7 +14,7 @@
 .lien {
     display: flex;
     justify-content: space-between;
-    margin-top: 15px;
+    margin-top: 20px;
     gap: 20px;
 }
 
@@ -69,19 +69,21 @@ a {
 }
 
 .evenement {
-    margin-top: 40px;
+    margin-top: 30px;
     max-width: 400px;
 }
 
 .aaa {
     display: flex;
+    border: 2px solid white;
     gap: 15px;
 }
 
 .date {
-    background: rgba(255, 255, 255, 0.733);
+    background: rgba(19, 34, 241, 0.815);
+    border: 2px solid white;
     padding: 10px 15px;
-    border-radius: 15px;
+    border-radius: 45px;
     text-align: center;
     width: 100%;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
@@ -91,7 +93,11 @@ a {
     display: block;
     font-size: 1.8rem;
     font-weight: bold;
-    color: black;
+    color:white;
+}
+.date label {
+    font-weight: bold;
+    color:white;
 }
 
 .mapage {
@@ -155,6 +161,7 @@ a {
 
 .mesbouttons {
     margin-top: 30px;
+    margin-bottom: 30px;
     display: flex;
     gap: 20px;
     justify-content: center;
@@ -320,7 +327,8 @@ a {
     padding: 18px 25px;
     border-radius: 40px;
     border: none;
-    font-size: 15px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 17px;
     font-weight: bold;
     color: white;
     cursor: pointer;
@@ -330,13 +338,22 @@ a {
 .buttonprogramme {
     padding: 18px 25px;
     border-radius: 40px;
-    font-size: 15px;
+    font-size: 17px;
     font-weight: bold;
-    border: 2px solid #1e90ff;
     background: transparent;
-    color: #1e90ff;
-    font-weight: 600;
+    border:2px solid blue;
+    font-family: 'Times New Roman', Times, serif;
+    color: blue;
+    font-weight: bold;
     cursor: pointer;
+}
+.buttonprogramme:hover{
+    transform: scale(1.1);
+    transition: 1s;
+}
+.buttonplace:hover{
+    transform: scale(1.1);
+    transition: 1s;
 }
 
 .back {
@@ -404,15 +421,19 @@ td {
 .logo {
     height: 51px;
     width: auto;
-    margin-left: 10px;
-
-
+    background: white;
+    border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+    border: 2px solid rgba(0, 0, 255, 0.685);
+    padding: 5px 15px;
+    margin: 10px;
 }
+
 
 .lien button {
     background: rgba(255, 255, 255, 0.945);
     border: none;
     font-size: 15px;
+    margin-right: 8px;
     padding: 6px 10px;
     border-radius: 50%;
     cursor: pointer;
@@ -441,10 +462,10 @@ td {
     display: flex;
     justify-content: center;
     gap: 25px;
-    background: rgba(8, 8, 8, 0.233);
+    background: rgba(35, 49, 245, 0.39);
     backdrop-filter: blur(15px);
     padding: 20px 30px;
-    border-radius: 15px;
+    border-radius: 25px;
     width: 100%;
     margin-top: 5px;
 }
@@ -484,8 +505,7 @@ td {
 }
 
 .formulaire {
-    flex: 2;
-    max-width: 750px;
+    max-width: 730px;
     border: 2px solid white;
     border-radius: 20px;
     margin-bottom: 100px;
@@ -504,15 +524,17 @@ td {
     flex-wrap: wrap;
     gap: 15px;
 }
-
 .formulaire form > div {
-    flex: 1 1 45%;
+    width: 45%;
     box-sizing: border-box;
-    
 }
 
-.formulaire form > div:last-of-type {
-    flex: 1 1 100%;
+.formulaire form > div.MESS {
+    width: 92%;
+}
+
+#envoyer {
+    width: 92%;
 }
 
 .formulaire label {
@@ -525,12 +547,21 @@ td {
 .formulaire select,
 .formulaire textarea {
     padding: 12px 10px;
-    border: 2px solid black;
+    border: 2px solid rgb(255, 253, 253);
     border-radius: 25px;
     font-size:15px;
     box-sizing: border-box;
     width: 100%;
     background: white;
+}
+#pays{
+    border: 2px solid white;
+}
+#type{
+    border: 2px solid white;
+}
+#message{
+    border: 2px solid white;
 }
 
 .formulaire textarea {
@@ -551,7 +582,6 @@ td {
 }
 
 .infos {
-    flex: 1;
     min-width: 250px;
     background-color: rgba(0, 0, 0, 0.37);
     border-radius: 10px;
@@ -857,7 +887,7 @@ td {
     color: white;
     font-size: 45px;
     margin-top: 70px;
-    margin-bottom: 150px;
+    margin-bottom: 100px;
     text-shadow: 0 0 10px #00bfff, 0 0 20px #00bfff, 0 0 30px #00bfff;
 
 }
@@ -879,8 +909,8 @@ td {
     border-radius: 16px;
     padding: 28px 24px;
     max-width: 340px;
-    width: 100%;
     box-sizing: border-box;
+    width: 100%;
     text-align: center;
 }
 
@@ -893,18 +923,20 @@ td {
     margin: 0 auto 20px;
     background: #1e2540;
 }
-
-.carte_intervenant h3 {
+.carte_intervenant h3{
     color: white;
-    font-size: 20px;
-    font-weight: 700;
-    margin: 0 0 6px;
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 15px;
 }
 
-.poste {
-    color: #4d8cff;
-    font-weight: 600;
-    font-size: 14px;
+
+.carte_intervenant .poste {
+    color: white;
+    text-shadow: 0 0 10px #00bfff, 0 0 20px #00bfff, 0 0 30px #00bfff;
+    font-weight: bold;
+    font-size: 17px;
+    font-family: 'Times New Roman', Times, serif;
     margin: 0 0 15px;
 }
 
@@ -941,12 +973,6 @@ td {
     position: relative;
 }
 
-.posteO li::before {
-    content: "•";
-    color: #33d69f;
-    position: absolute;
-    left: 0;
-}
 
 .sponsors {
     padding: 50px 20px;
@@ -972,10 +998,10 @@ td {
 .titreS {
     text-align: center;
     color: white;
-    font-size: 24px;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    margin-bottom: 30px;
+    font-size: 34px;
+    text-shadow: 0 0 10px #00bfff, 0 0 20px #00bfff, 0 0 30px #00bfff;
+    margin-bottom: 50px;
+    margin-top: 50px;
 }
 
 .carte_sponsor {
@@ -1120,7 +1146,7 @@ footer {
 }
 
 .footer_bas {
-    border-top: 1px solid #2a3352;
+    border-top: 1px solid #f9fafd;
     padding-top: 20px;
     text-align: center;
 }
@@ -1190,17 +1216,6 @@ footer {
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.25);
 }
 
-.jour1 th:first-child,
-.jour2 th:first-child,
-.jour3 th:first-child {
-    border-top-left-radius: 14px;
-}
-
-.jour1 th:last-child,
-.jour2 th:last-child,
-.jour3 th:last-child {
-    border-top-right-radius: 14px;
-}
 
 .jour1 th,
 .jour2 th,
@@ -1224,11 +1239,6 @@ footer {
     border-bottom: 1px solid #2a3352;
 }
 
-.jour1 tr:last-child td,
-.jour2 tr:last-child td,
-.jour3 tr:last-child td {
-    border-bottom: none;
-}
 
 .jour1 tr:hover td {
     background: rgba(77, 140, 255, 0.08);
@@ -1434,10 +1444,12 @@ footer {
     text-align: left;
 }
 
-.contenu h3 {
-    color: white;
-    font-size: 18px;
+.contenu .SHADOW {
+    font-size: 30px;
     margin-bottom: 10px;
+    font-weight: bold;
+    color: white;
+    text-shadow: 0 0 10px #00bfff, 0 0 20px #00bfff, 0 0 30px #00bfff;
 }
 
 .contenu p {
@@ -1541,19 +1553,18 @@ footer {
     border: none;
     font-size: 24px;
     cursor: pointer;
+    padding: 8px 10px;
+    border-radius: 17px;
     position: absolute;
-    top: 20px;
+    background: rgba(0, 0, 0, 0.562);
+    color: white;
+    top: 15px;
     right: 20px;
     z-index: 1001;
 }
-.mesbouttons button{
-    background: blue;
-    color: white;
-    font-weight: bold;
-    font-size: 17px;
-    border-radius: 50px;
-    padding: 13px 13px;
-    border: 2px solid blue;
+.AFR{
+    color: rgb(0, 0, 252);
+    font-size: 45px;
 }
 
 @media (max-width: 480px) {
@@ -1563,9 +1574,8 @@ footer {
     .imgPro {
         display: none;
     }
-    .texteacceuil{
-        font-size: 30px;
-        margin-top: 60px;
+    .mini{
+        font-size: 15px;
     }
     .afri{
         font-size: 30px;
@@ -1577,38 +1587,42 @@ footer {
         gap: 8px;
         background: rgba(252, 253, 253, 0.397);
         padding: 5px 8px;
-        margin-left: 5px;
+        margin-left: 20px;
         border-radius: 20px;
         color: #000305c9;
         font-weight: bold;
     }
     .acceuil{
-        margin-right: 80px;
+        margin-right: 40px;
+        margin-top: 30px;
+        margin-bottom: 40px;
     }
-    
+    .mapage{
+        height: 96vh;
+    }
     .dateevenement {
     display: flex;
     align-items: center;
     gap: 15px;
-    margin-left: 10px;
-    margin-top: 10px;
+    margin-top: 20px;
     }
     .aaa {
         display: flex;
         justify-content: center;
-        gap: 25px;
-        background: rgba(8, 8, 8, 0.233);
+        gap: 20px;
+        background: rgba(19, 34, 241, 0.815);
         backdrop-filter: blur(15px);
-        padding: 5px 20px;
+        padding: 5px 25px;
         border-radius: 15px;
-        width: 300px;
+        width: 280px;
+         margin: 15px auto 0; 
         margin-top: 15px;
     }
     .date {
-    background: rgba(255, 255, 255, 0.733);
-    padding: 5px 5px;
-    border-radius: 15px;
+    background: transparent;
+    padding: 15px 5px;
     text-align: center;
+    border: none;
     width: 100%;
     }
     .buttonplace {
@@ -1616,12 +1630,52 @@ footer {
     margin-left: 40px;
     border-radius: 40px;
     border: none;
-    font-size: 12px;
+    font-size: 15px;
     font-weight: bold;
     color: white;
     cursor: pointer;
     background-color: rgba(0, 0, 255, 0.925);
 }
+
+    .navigation {
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .lien {
+        position: absolute;
+        top: 70px;
+        right: 0;
+        background: rgba(0, 0, 0, 0.9);
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+        display: none;
+    }
+
+    .lien.active {
+        display: flex;
+    }
+
+    .PAGEACCEUIL {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .texte {
+        margin: 80px 10px 20px 10px;
+    }
+
+    .texteacceuil {
+        font-size: 28px;
+    }
+
+    span {
+        font-size: 16px;
+    }
+
+
 .calendrier {
         width: 100%;
         max-width: 100%;
@@ -1658,7 +1712,7 @@ footer {
 
     .titreP{
         margin-left: 30px;
-        margin-top: 30px;
+        margin-top: -20px;
     }
     .titrePro{
         margin-left: 30px;
@@ -1679,17 +1733,17 @@ footer {
     .bouttonP button {
         padding: 8px 18px;
         font-size: 14px;
-        margin-top: 30px;
+        margin-top: 10px;
     }
 
 .buttonprogramme {
-    padding: 10px 15px;
+    padding: 5px 20px;
     border-radius: 40px;
-    font-size: 12px;
+    font-size: 15px;
     font-weight: bold;
-    border: 2px solid #1e90ff;
+    border: 2px solid #1201f8;
     background: transparent;
-    color: white;
+    color: blue;
     font-weight: 600;
     cursor: pointer;
 }
@@ -1722,29 +1776,31 @@ footer {
         position: relative;
         display: flex;
         justify-content: space-between;
-        align-items: center;
     }
 
     .lien {
         position: absolute;
         top: 100%;
-        left: 0;
-        width: 100%;
+        right: 0;
+        width: 50%;
         flex-direction: column;
-        background: #fff; 
         display: none;
+        border-radius: 30px;
+        color: white;
         text-align: center;
         z-index: 1000;
     }
 
     .lien.active {
         display: flex;
-        background: #0072ff;
+        background: rgba(5, 88, 241, 0.877);
     }
 
     .lien li {
-        padding: 12px 0;
-        border-bottom: 1px solid #eee;
+        padding: 8px 0;
+    }
+    .lien a {
+        color: white;
     }
     .thematique {
         padding: 30px 15px;
@@ -1764,8 +1820,13 @@ footer {
     }
 
     .centrerT {
-        font-size: 35px;
-        margin-bottom: 40px;
+        font-size: 45px;
+        margin-bottom: 100px;
+        margin-top: 100px;
+    }
+    .accordion{
+        width: 90%;
+        margin-left: 20px;
     }
 
     .imgTheme {
@@ -1779,9 +1840,12 @@ footer {
         gap: 15px;
         padding: 10px;
     }
+    .AFR{
+        font-size: 35px;
+    }
 
     .intervenant > div {
-        flex: 0 0 100%;
+        
         max-width: 100%;
     }
 
@@ -1794,6 +1858,10 @@ footer {
         font-size: 26px;
         margin-top: 40px;
     }
+    .mapage {
+    background: linear-gradient(135deg, #4949f54f, #b3e5fcad, #81d4fa7e), url(../Images/AF4.png) no-repeat center center;
+    background-size: cover;
+}
 
     .mesbouttons {
         flex-wrap: wrap;
@@ -1819,6 +1887,7 @@ footer {
     }
     .evenement {
         flex-wrap: wrap;
+        
     }
     .thematique {
         padding: 60px 30px;
@@ -1853,9 +1922,9 @@ footer {
         margin-top: 15px;
     }
     .date {
-    background: rgba(255, 255, 255, 0.733);
+    background: rgba(19, 34, 241, 0.815);
     padding: 5px 5px;
-    border-radius: 15px;
+    border-radius: 35px;
     text-align: center;
     width: 100%;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
@@ -1871,22 +1940,21 @@ footer {
     cursor: pointer;
     background-color: rgba(0, 0, 255, 0.925);
 }
-
+.buttonprogramme {
+    border: 2px solid blue;
+    color: blue;
+}
 .acceuil{
    margin-left: 150px;
 }
-.buttonprogramme{
-    color: white;
-    border: 2px solid white;
-}
 .evenement{
-    margin-left: 150px;
+    margin-left: 120px;
 
 }
 .date {
-    background: rgba(255, 255, 255, 0.733);
+    background: rgba(19, 34, 241, 0.815);
     padding: 10px 15px;
-    border-radius: 15px;
+    border-radius: 35px;
     text-align: center;
     width: 100%;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
@@ -1929,6 +1997,10 @@ footer {
     flex-direction: row;
     width: 100%;
 }
+.mapage {
+    background: linear-gradient(135deg, #fcfcfd52, #b3e5fc8a, #81d4fa6e), url(../Images/AF4.png) no-repeat center center;
+    background-size: cover;
+}
 
 }
 @media (min-width: 1000px) and (max-width: 1300px){
@@ -1966,8 +2038,17 @@ footer {
 .INTER{
     background: linear-gradient(135deg, #7f8cff96 0%, #6FA8FF 35%, #89C2FF 70%, #B8D8FF 100%);
 }
+.backC1 {
+    background: linear-gradient(135deg,#73aeee 0%,#4d8ff1 25%,#609cf5d8 50%,#4da6ff 75%,#0073e6 100%);
+}
 
-
+.backC{
+    background: linear-gradient(145deg, #176dddf6, #2e84ecf1, #2d7aee);
+}
+.SHADOW{
+    font-size: 45px;
+     text-shadow: 0 0 10px #00bfff, 0 0 20px #00bfff, 0 0 30px #00bfff;
+}
 .themeclair body {
     background: #ffffff;
     color: #12162B;
@@ -2010,9 +2091,30 @@ footer {
     color: #12162B;
     text-shadow: none;
 }
+.themeclair .footer_bas {
+    border-top: 1px solid #050505;
+}
+.themeclair .formulaire input,
+.formulaire select,
+.formulaire textarea {
+    border: 2px solid rgb(7, 7, 7);
+}
 .themeclair .centrerT{
     color: #12162B;
     text-shadow: none;
+}
+.themeclair #pays{
+    border: 2px solid black;
+}
+.themeclair #message{
+    border: 2px solid black;
+}
+.themeclair #type{
+    border: 2px solid black;
+}
+.themeclair .poste{
+    text-shadow: none;
+    color: black;
 }
 .themeclair .centrerN{
     color: #12162B;
@@ -2216,7 +2318,7 @@ footer {
 
 .themeclair footer {
     background-color: #ffffff;
-    border-top: 1px solid #dfe3ec;
+    border-top: 1px solid #0d0d0e;
 }
 .themeclair .footer h3 {
     color: #12162B;
@@ -2256,17 +2358,25 @@ body.themeclair.INTER{
 .themeclair .carte_sponsor {
     box-shadow: 0 6px 20px rgba(0, 0, 0, 0.267);
 }
+.themeclair.backC1{
+    background: white;
+}
+.themeclair.backC{
+    background: white;
+}
 .navbarauscroll {
     background:rgba(89, 89, 250, 0.425);
     backdrop-filter: blur(12px);
 }
 .navbarauscroll .logo {
     background: white;
-    border-radius: 70px;
-    padding: 5px 15px;
+    border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+    border: 2px solid rgba(0, 0, 255, 0.685);
+    padding: 8px 20px;
     margin: 10px;
 }
 .navbarauscroll .lien {
+    color: white;
     padding: 10px;
 }
 .inter{
@@ -2306,13 +2416,10 @@ body.themeclair.INTER{
     transform: translateY(0);
 }
 .carte_intervenant:hover {
-    transform: translateY(-8px);
-    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.18);
+    transform:scale(1.1);
+    transition: 1s;
 }
-.AFR{
-    color: blue;
-    font-size: 45px;
-}
+
 #annee{
     font-size: 15px;
 }
@@ -2322,3 +2429,58 @@ body.themeclair.INTER{
 .cache{
     display: none;
 }
+.mesbouttons {
+    margin-top: 40px;
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.mesbouttons button {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background: #0233f8;
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+    font-family: 'Times New Roman', Times, serif;
+    border: 1px solid blue;
+    border-radius: 30px;
+    padding: 15px 20px;
+    cursor: pointer;
+    transition: all 0.25s ease;
+}
+.mesbouttons button i {
+    font-size: 14px;
+}
+.mesbouttons button:hover {
+    transform: scale(1.1);
+}
+
+.sponsor_or {
+    border: 2px solid #FFD700;
+    box-shadow: 0 0 15px rgba(255, 215, 0, 0.35);
+}
+.sponsor_argent {
+    border: 2px solid #C0C0C0;
+    box-shadow: 0 0 15px rgba(192, 192, 192, 0.35);
+}
+
+.sponsor_bronze {
+    border: 2px solid #cd7f32;
+    box-shadow: 0 0 15px rgba(205, 127, 50, 0.35);
+}
+.date:hover{
+    transform: scale(1.1);
+    transition:1s;
+}
+.carteP:hover{
+    transform: scale(1.1);
+    transition:1s;
+}
+* {
+    scrollbar-width: none;
+}
+

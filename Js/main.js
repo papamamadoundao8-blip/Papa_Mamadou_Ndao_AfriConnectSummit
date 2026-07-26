@@ -151,6 +151,32 @@ else {
     });
 }
 
+let dateDC = new Date("2026-10-15");
+let temps = setInterval(function () {
+    let aujourdhui = new Date();
+    let difference = dateDC - aujourdhui;
+    if (difference < 0) {
+        clearInterval(temps);
+        document.getElementById("jour").textContent = 0;
+        document.getElementById("heure").textContent = 0;
+        document.getElementById("minutes").textContent = 0;
+        document.getElementById("seconde").textContent = 0;
+        return;
+    }
+    let secondesTotal = parseInt(difference / 1000);
+    let jours = parseInt(secondesTotal / 86400);
+    secondesTotal = secondesTotal - (jours * 86400);
+    let heures = parseInt(secondesTotal / 3600);
+    secondesTotal = secondesTotal - (heures * 3600);
+    let minutes = parseInt(secondesTotal / 60);
+    secondesTotal = secondesTotal - (minutes * 60);
+    let secondes = secondesTotal;
+document.getElementById("jour").textContent = jours;
+document.getElementById("heure").textContent = heures;
+document.getElementById("minutes").textContent = minutes;
+document.getElementById("seconde").textContent = secondes;
+});
+
 document.getElementById("envoyer").addEventListener("click", function (cliquer) {
 cliquer.preventDefault();
 let prenom = document.querySelector('input[placeholder="Donner votre prenom"]').value;
@@ -217,7 +243,7 @@ function enlever() {
 }
 function afficherSucces() {
     let succes = document.createElement("div");
-    succes.textContent = "Envoyé";
+    succes.textContent = " Message Envoyé";
     succes.style.background = "#06f83f";
     succes.style.color = "#0a0a0a";
     succes.style.fontSize = "20px";
